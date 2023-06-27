@@ -27,9 +27,14 @@ const deleteUser = async(req,res) =>{
     res.send({status:"success",message:"User deleted"})
 }
 
+const newService = async(req, res) => {
+    res.send({status:"success",message:"New service"})
+}
+
 export default {
     deleteUser,
     getAllUsers,
     getUser,
-    updateUser
+    updateUser,
+    newService
 }
